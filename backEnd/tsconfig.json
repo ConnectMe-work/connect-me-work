@@ -1,0 +1,28 @@
+{
+  "extends": "fastify-tsconfig",
+  "compilerOptions": {
+    "outDir": "dist",
+    "rootDir": "./src",
+    "declaration": true,
+    "sourceMap": true,
+    "target": "es2020",
+    /* these options required for  @fastify/type-provider-json-schema-to-ts*/
+    "strict": true,
+    "strictNullChecks": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "noStrictGenericChecks": false,
+    "noUnusedLocals": false
+  },
+  "include": [
+    "./src/**/*.ts",
+    "./src/**/**/*.ts",
+    "./src/**/*.d.ts"
+, "scripts/copyTemplates.js"  ],
+  "exclude": [
+    "node_modules",
+    "public",
+    "dist",
+     "__test__"
+  ]
+}
