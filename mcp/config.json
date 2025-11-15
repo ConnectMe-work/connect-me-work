@@ -1,0 +1,23 @@
+{
+  "ollama": {
+    "url": "http://127.0.0.1:11434"
+  },
+  "pgmcp": {
+    "cmd": "/usr/bin/pgmcp-client"
+  },
+  "whisper": {
+    "env_path": "/data/whisper-env",
+    "workdir": "/data",
+    "model": "large",
+    "language": "Latvian"
+  },
+  "server": {
+    "host": "0.0.0.0",
+    "port": 9075
+  },
+  "default_model": "deepseek-r1:14b",
+  "logging": {
+    "level": "info",
+    "file": "/data/mcp-proxy/interceptor.log"
+  }
+}
