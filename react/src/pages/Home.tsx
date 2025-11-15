@@ -1,12 +1,14 @@
-import { Box, Typography } from "@mui/material";
+import { Box, Paper, Stack, Typography } from "@mui/material";
+import EvenForm from "src/sections/EventForm/EvenForm";
 
 function Home() {
   return (
-    <Box>
-      <Typography variant="h3" component="h1" gutterBottom>
-        Welcome to Connect Me!
+    <Stack rowGap={3}>
+      <Typography variant="h5" component="h1" gutterBottom>
+        Record your defection act
       </Typography>
-    </Box>
+      <EvenForm />
+    </Stack>
   );
 }
 

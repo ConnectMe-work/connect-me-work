@@ -1,7 +1,12 @@
 {
   "compilerOptions": {
     /* Bundler */
-    "baseUrl": ".",
+    "baseUrl": "./src",
+    "paths": {
+      "src/*": [
+        "./*"
+      ]
+    },
     "module": "ESNext",
     "jsx": "react-jsx",
     "allowJs": true,
