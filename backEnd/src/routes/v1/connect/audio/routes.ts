@@ -24,7 +24,7 @@ const AudioRoutes: FastifyPluginAsync = async (fastify: FastifyInstance) => {
 
   fastify.post('/', {
     schema: {
-      tags: [SwaggerSectionTags.attachment.name],
+      tags: [SwaggerSectionTags.audio.name],
       consumes: ['multipart/form-data'],
       response: {
         200: zodToJsonSchema(audioResponseSchema)

@@ -29,6 +29,14 @@ const configSchema = {
             type: "string",
             default: "debug"
         },
+        LISTEN_PORT: {
+            type: 'number',
+            default: 3000
+        },
+        HOST: {
+            type: "string",
+            default: "127.0.0.1"
+        },
     }
 } as const;
 
