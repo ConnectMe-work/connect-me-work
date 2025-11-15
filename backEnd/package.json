@@ -11,10 +11,9 @@
   },
   "types": "index.d.ts",
   "scripts": {
-    "build": "rimraf dist && tsc && npm run copy-static",
-    "dev": "npm run copy-static && tsc-watch --noClear --onSuccess \"node --inspect=0.0.0.0 .\" ",
+    "build": "rimraf dist && tsc",
+    "dev": "tsc-watch --noClear --onSuccess \"node --inspect=0.0.0.0 .\" ",
     "dev:tsc": "tsc-watch --noClear -p tsconfig.json",
-    "copy-static": "node scripts/copyTemplates.js&&node scripts/copyLocales.js",
     "start": "node dist/server.js",
     "lint": "eslint '{src,test}/**/*.ts'",
     "lint:fix": "eslint --fix '{src,test}/**/*.ts'",

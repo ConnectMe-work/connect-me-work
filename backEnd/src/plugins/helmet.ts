@@ -1,7 +1,6 @@
 import fp from 'fastify-plugin';
 import { FastifyInstance, FastifyPluginAsync } from 'fastify';
 import helmet from '@fastify/helmet';
-import { t } from 'i18next';
 
 const helmetPlugin: FastifyPluginAsync = async (fastify: FastifyInstance) => {
   try {

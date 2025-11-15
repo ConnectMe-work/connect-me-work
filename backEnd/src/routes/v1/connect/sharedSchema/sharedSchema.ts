@@ -1,6 +1,5 @@
 import { z } from "zod"
 import zodToJsonSchema from 'zod-to-json-schema'
-import { RelationshipType } from "../../../../entities/data/relationships.entity"
 
 export interface PaginateResults<T> {
   list: T[];
@@ -123,23 +122,7 @@ export const attachments = z.object({
 
 export type AttachmentsSchema = z.infer<typeof attachments>;
 
-export const relationship = z.object({
-  relationshipId: z.number().optional(),
-  subjectId: z.number().optional(),
-  objectId: z.number().optional(),
-  type: z.nativeEnum(RelationshipType).optional(),
-  comments: z.string().optional(),
-  createDate: z.date().optional()
-})
 
-export type RelationshipSchema = z.infer<typeof relationship>;
-
-export const relationships = z.object({
-  count: z.number(),
-  list: z.array(relationship)
-})
-
-export type RelationshipsSchema = z.infer<typeof relationships>;
 
 export const chatId = z.object({
   chatId: z.number(),

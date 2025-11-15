@@ -1,10 +1,10 @@
 
 import { FastifyInstance, FastifyPluginAsync } from 'fastify';
-import { SwaggerSectionTags } from '../../../../manual/swagger';
 import { audioProxy } from './audiHandler';
 import { audioResponseSchema } from './audioSchema';
 import zodToJsonSchema from 'zod-to-json-schema';
 import multipart from '@fastify/multipart';
+import { SwaggerSectionTags } from '../../../../manual/swagger';
 
 
 
@@ -23,7 +23,6 @@ const AudioRoutes: FastifyPluginAsync = async (fastify: FastifyInstance) => {
   });
 
   fastify.post('/', {
-    onRequest: fastify.authenticate,
     schema: {
       tags: [SwaggerSectionTags.attachment.name],
       consumes: ['multipart/form-data'],

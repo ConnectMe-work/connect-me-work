@@ -24,7 +24,11 @@ const configSchema = {
         AUDIO_CREDENTIALS: {
             type: "string",
             default: 'key'
-        }
+        },
+        LOG_LEVEL: {
+            type: "string",
+            default: "debug"
+        },
     }
 } as const;
 
