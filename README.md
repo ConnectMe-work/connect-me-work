@@ -33,6 +33,11 @@ Companies can deploy a fully branded portal in one day, and mobile apps are prep
 - Gaming studios and production
 - Event management
 
+##Architecture
+<img width="862" height="719" alt="image" src="https://github.com/user-attachments/assets/41e3fe19-a716-4751-ab5b-a42f42e0ddb7" />
+
+
+
 ### Getting started
 Clone the repository and follow the instructions:
 
