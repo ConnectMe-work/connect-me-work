@@ -3,12 +3,14 @@ import { createRoot } from "react-dom/client";
 import { Provider } from "react-redux";
 import { BrowserRouter } from "react-router";
 import { CssBaseline, ThemeProvider } from "@mui/material";
-import { store } from "./store/store.js";
-import { theme } from "./theme/theme.js";
 import App from "./App.js";
 import "./index.css";
+import { store } from "./store/store";
+import { theme } from "./theme/theme";
 
-createRoot(document.getElementById("root")).render(
+const root = createRoot(document.getElementById('root')!);
+
+root.render(
   <StrictMode>
     <Provider store={store}>
       <BrowserRouter>
@@ -20,3 +22,4 @@ createRoot(document.getElementById("root")).render(
     </Provider>
   </StrictMode>
 );
+

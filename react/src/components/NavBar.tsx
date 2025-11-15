@@ -1,21 +1,25 @@
-import { AppBar, Toolbar, Typography, Button, Box } from "@mui/material";
+import { AppBar, Toolbar, Typography, Button, Box, Stack, Grid } from "@mui/material";
 import { Link as RouterLink } from "react-router";
 
 function NavBar() {
   return (
     <AppBar position="static">
       <Toolbar>
-        <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-          ConnectME
-        </Typography>
-        <Box>
-          <Button color="inherit" component={RouterLink} to="/">
-            Home
-          </Button>
-          <Button color="inherit" component={RouterLink} to="/chat">
-            Chat
-          </Button>
-        </Box>
+        <Stack direction="row" spacing={2} alignItems="center" justifyContent="space-between" width="100%">
+          <Stack direction="row" alignItems="center">
+            <Typography variant="h4" color="primary" fontWeight="bold">Connect</Typography>
+            <Typography variant="h4" color="secondary" fontWeight="bold" >Me</Typography>
+          </Stack>
+
+          <Box>
+            <Button color="inherit" component={RouterLink} to="/">
+              Recording
+            </Button>
+            <Button color="inherit" component={RouterLink} to="/chat">
+              Chat
+            </Button>
+          </Box>
+        </Stack>
       </Toolbar>
     </AppBar>
   );
