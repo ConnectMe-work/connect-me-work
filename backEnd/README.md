@@ -29,11 +29,6 @@ This is the backend API for the ConnectMe platform, built with [Fastify](https:/
 - **POST**: Ask a question to the AI assistant and receive a streamed response.
 - **Schema**: See [`askAssistantSchema`](src/routes/v1/connect/assistant/assistanSchema.ts)
 
-### `/v1/connect/notes`, `/v1/connect/maps`, `/v1/connect/attachments`, `/v1/connect/relationships`
-
-- **CRUD**: Manage notes, maps, attachments, and relationships.
-- **Schemas**: See [`sharedSchema`](src/routes/v1/connect/sharedSchema/sharedSchema.ts)
-
 ## Plugins
 
 - **CORS**: [`corsPlugin`](src/plugins/cors.ts)
