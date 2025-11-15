@@ -7,7 +7,9 @@ import Chat from "./pages/Chat";
 function App() {
   return (
     <Box sx={{ minHeight: "100vh", display: "flex", flexDirection: "column" }}>
-      <NavBar />
+      <Box sx={{ position: "sticky", top: 0, zIndex: 1100 }}>
+        <NavBar />
+      </Box>
       <Container component="main" sx={{ flex: 1, py: 4 }}>
         <Routes>
           <Route path="/" element={<Home />} />

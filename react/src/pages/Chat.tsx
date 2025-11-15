@@ -1,16 +1,21 @@
-import { Typography, Paper, Box, Chip, Stack } from "@mui/material";
-import dayjs from "dayjs";
+import { Container } from "@mui/material";
+import AIChat from "src/components/AIChat";
 
 function Chat() {
   return (
-    <Box>
-      <Typography variant="h3" component="h1" gutterBottom>
-        Here will be chat
-      </Typography>
-      <Paper elevation={2} sx={{ p: 3, mb: 3 }}>
-        <Typography variant="body1">Chat will be implemented here.</Typography>
-      </Paper>
-    </Box>
+    <Container
+      sx={[
+        () => ({
+          display: 'flex',
+          flex: 1,
+          height: 'calc(100vh - 150px)',
+          flexDirection: 'column',
+        }),
+      ]}
+
+    >
+      <AIChat />
+    </Container>
   );
 }
 

@@ -1,11 +1,10 @@
 import { Button, Grid, IconButton, Stack } from "@mui/material";
-import React, { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect } from "react";
 import { showErrorMessage } from "src/utils/alert";
 import KeyboardVoiceIcon from '@mui/icons-material/KeyboardVoice';
-import GraphicEqIcon from '@mui/icons-material/GraphicEq';
 import { MotionContainer } from "./MotionContainer";
 import AudioVisualizer from "./AudioVisualizer";
-import { sendAudioStandalone } from "src/redux/audio/audioSlice";
+import { sendAudioStandalone } from "src/services/audioApi";
 import StopIcon from '@mui/icons-material/Stop';
 
 interface Props {

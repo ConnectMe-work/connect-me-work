@@ -1,5 +1,5 @@
 import { Box, Paper, Stack, Typography } from "@mui/material";
-import EvenForm from "src/sections/EventForm/EvenForm";
+import EvenForm from "src/components/EvenForm";
 
 function Home() {
   return (
