@@ -6,7 +6,7 @@ function Home() {
     <Box justifyContent="center" display="flex" >
       <Stack rowGap={3} maxWidth={600} flexWrap="wrap" width="100%" >
         <Typography variant="h5" component="h1" gutterBottom>
-          Record your defection act
+          Record note by speaking
         </Typography>
         <EvenForm />
       </Stack>
