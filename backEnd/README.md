@@ -43,17 +43,13 @@ This is the backend API for the ConnectMe platform, built with [Fastify](https:/
    ```bash
    npm install
    ```
-2. Run in development mode:
-   ```bash
-   npm run dev
-   ```
-3. Build for production:
+2. Build:
    ```bash
    npm run build
    ```
-4. Start server:
+3. Run in development mode:
    ```bash
-   npm start
+   npm run dev
    ```
 
 ## Configuration
