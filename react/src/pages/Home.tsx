@@ -3,12 +3,14 @@ import EvenForm from "src/sections/EventForm/EvenForm";
 
 function Home() {
   return (
-    <Stack rowGap={3}>
-      <Typography variant="h5" component="h1" gutterBottom>
-        Record your defection act
-      </Typography>
-      <EvenForm />
-    </Stack>
+    <Box justifyContent="center" display="flex" >
+      <Stack rowGap={3} maxWidth={600} flexWrap="wrap" width="100%" >
+        <Typography variant="h5" component="h1" gutterBottom>
+          Record your defection act
+        </Typography>
+        <EvenForm />
+      </Stack>
+    </Box>
   );
 }
 

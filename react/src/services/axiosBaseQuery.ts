@@ -2,8 +2,8 @@
 
 import type { BaseQueryFn } from '@reduxjs/toolkit/query';
 import type { AxiosRequestConfig } from 'axios';
-import { axiosInstance } from './axiosInstance';
 import { CONFIG } from '../global-config';
+import axiosInstance from './axiosInstance';
 
 
 export const axiosBaseQuery =
